@@ -1,5 +1,4 @@
 :root{
-    --lt_bg: #242537;
     --dk_bg: #15172B;
     --lt_accnt: #FFFBF3;
     --md_accnt: #EAEFC7;
@@ -51,10 +50,10 @@ main{
     cursor: pointer;
     margin: 0 auto;
     padding: .5em;
-    background: #1a1c35;  
-    border: 1px solid #0e101d;
+    background: #1A1C35;  
+    border: 1px solid #0E101D;
     border-radius: 20px;
-    box-shadow: 0px 2px 0 #0d0e1a, 2px 4px 6px #121324;
+    box-shadow: 0px 2px 0 #0D0E1A, 2px 4px 6px #121324;
     font-weight: 900;
     letter-spacing: 1px;
     transition: all 150ms linear;
@@ -66,7 +65,7 @@ main{
     border: 1px solid rgba(#000, .05);
     box-shadow: 1px 1px 2px rgba(var(--lt_txt), .2);
     color: #333869; 
-    text-shadow: -1px -1px 0 #05060a;
+    text-shadow: -1px -1px 0 #05060A;
 }
 h3{
     margin-top: 30px;
