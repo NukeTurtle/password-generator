@@ -1,6 +1,7 @@
 const generateBtn = document.querySelector("#generateBtn");
 const passwordDisplay = document.querySelector("#password");
 const passwordBlock = document.querySelector("#passwordBlock");
+
 if(passwordDisplay.innerHTML === ""){
     passwordBlock.style.display = "none";
 }
@@ -42,6 +43,7 @@ generateBtn.addEventListener("click", function() {
       Math.floor(Math.random() * passwordChars.length)
     );
   }
+  
   passwordDisplay.textContent = password;
   passwordBlock.style.display = "block";
 });

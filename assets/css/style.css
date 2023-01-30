@@ -1,8 +1,80 @@
-#generateBtn{
-    padding: 10px;
-    width: fit-content;
-    cursor: pointer;
-    font-weight: 600;
-    border: 1px solid #000;
+:root{
+    --lt_bg: #242537;
+    --dk_bg: #15172B;
+    --lt_accnt: #FFFBF3;
+    --md_accnt: #EAEFC7;
+    --dk_accnt: #FFD26B;
+    --lt_txt: #FFFBF3;
+    --dk_txt: #676875;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+html{
+    background: linear-gradient(90deg, var(--lt_accnt) 0%, var(--md_accnt) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    position: absolute;
+    width: 600px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#password_generator{
+    width: 600px;
+    height: 400px;
+    display: table-cell;
+    color: var(--dk_txt);
+    background-color: var(--dk_bg);
     border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 10px 10px 15px;
+}
+#lock{
+    width: 50px;
+    height: 50px;
+    background: url(../../assets/img/lock-solid.svg) no-repeat;
+    margin: 0 auto;
+    filter: invert(69%) sepia(90%) saturate(261%) hue-rotate(352deg) brightness(105%) contrast(102%);
+}
+#generateBtn{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: .5em;
+    background: #1a1c35;  
+    border: 1px solid #0e101d;
+    border-radius: 20px;
+    box-shadow: 0px 2px 0 #0d0e1a, 2px 4px 6px #121324;
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+    color: var(--dk_accnt);
+    position: relative;
+}
+#generateBtn:hover {
+    background: #121426;
+    border: 1px solid rgba(#000, .05);
+    box-shadow: 1px 1px 2px rgba(var(--lt_txt), .2);
+    color: #333869; 
+    text-shadow: -1px -1px 0 #05060a;
+}
+h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#password{
+    padding: 5px;
+    margin: 0 auto;
+    width: fit-content;
+    border-bottom: 1px solid var(--dk_txt);
 }
