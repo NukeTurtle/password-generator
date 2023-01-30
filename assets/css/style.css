@@ -19,8 +19,9 @@ main{
     justify-content: center;
     align-items: center;
     top: 50%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
+    max-width: 99vw;
 }
 #password_generator{
     width: 600px;
